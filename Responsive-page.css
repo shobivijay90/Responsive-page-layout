@@ -1,0 +1,79 @@
+#container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.red{
+  width: 200px;
+  height: 100px;
+  background-color: red; 
+}
+.blue{
+  width: 200px;
+  height: 100px;
+  background-color: blue; 
+}
+.green{
+  width: 200px;
+  height: 100px;
+  background-color: green; 
+}
+
+.pink{
+  width: 200px;
+  height: 100px;
+  background-color: pink; 
+}
+
+.yellow{
+  width: 200px;
+  height: 100px;
+  background-color: yellow; 
+}
+
+.orange{
+  width: 200px;
+  height: 100px;
+  background-color: orange; 
+}
+@media screen and (max-width: 600px){
+ .red,.green,.blue,.yellow,.pink,.orange
+  {
+  width: 100%;
+  }
+  
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  
+  .red{
+    width: 100%;
+    order: 0;
+  }
+  .green{
+    width: 50%;
+    order: 1;
+  }
+  .blue{
+    width: 50%;
+    order: 2;
+  }
+  .yellow{
+    width: 50%;
+    order: 3;
+  }
+  .pink{
+    width: 25%;
+    order: 4;
+  }
+  .orange{
+    width: 25%;
+    order: 5;
+  }
+}
+
+@media screen and (min-width: 900px){
+
+  #container{
+   justify-content: center;
+  }
+}
